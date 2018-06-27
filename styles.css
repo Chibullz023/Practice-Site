@@ -17,6 +17,11 @@
 		flex: 1;
 	}
 	
+	#content2 {
+		background-color: #e3f2fd;
+		flex: 2;
+	}
+	
 	#nextpage {
 		background-color: white;
 	}
@@ -31,6 +36,16 @@
 	#table, th, td {
 		border: 1px solid black;
 		padding: 15px;
+	}
+	
+	#links {
+		float: left;
+		width: 50%
+	}
+	
+	#horse {
+		float: right;.
+		width: 50%
 	}
 	
 	a {

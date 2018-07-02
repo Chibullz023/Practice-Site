@@ -1,37 +1,27 @@
 	html {
 		height: 100%;
 	}
-	body {
-		display: flex;
-		flex-direction: column;
-		min-height: 100%;
-	}
 	
 
 	p {
 		line-height: 10px;
 	}
 	
-	#content {
-		background-color: #e3f2fd;
-		flex: 1;
+	body {
+		background-color: #82CAFF;
 	}
-	
-	#content2 {
-		background-color: #e3f2fd;
-		flex: 2;
-	}
-	
+
 	#nextpage {
 		background-color: white;
 	}
 	
 	#footer {
-		background-color: #f3e5f5;
+		border-top: solid;
+		padding-top: 5px;
 		padding: 5px;
-		width: 100%
-		font-size: 10px;
-	}
+		width: 100%;
+		float: bottom;
+		}
 	
 	#table, th, td {
 		border: 1px solid black;
@@ -39,15 +29,19 @@
 	}
 	
 	#links {
-		float: left;
-		width: 50%
+		float: right;
+		width: 35%;
 	}
 	
 	#horse {
-		float: right;.
-		width: 50%
+		float: left;
+		width: 65%;
 	}
 	
+	#content {
+		float: bottom;
+		width: 100%;
+	}	
 	a {
 		color: black;
 	}
@@ -56,15 +50,3 @@
 		color: red;
 	}
 	
-	#navbar {
-		width: 100%;
-		background-color: #767676;
-	}
-	nav ul {
-		margin: 0px;
-		padding: 5px 0px 5px 30px;
-  }
-	nav li {
-		display: inline;
-		margin-right: 20px;
-  }

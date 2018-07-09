@@ -1,13 +1,31 @@
 	html {
 		height: 100%;
+		background-color: peru;
 	}
 	
 	p {
 		line-height: 10px;
+		color: aliceblue;
 	}
-	
-	body {
-		background-color: #82CAFF;
+
+	ul{
+		color: white;
+	}
+
+	h1 {
+		color: cyan;
+	}
+
+	h2{
+		color: blueviolet;
+	}
+
+	h4{
+		color: greenyellow;
+	}
+
+	clouds {
+		opacity: 0.1;
 	}
 
 	#nextpage {
@@ -15,10 +33,10 @@
 	}
 	
 	#footer {
-		border-top: solid;
 		padding-top: 5px;
 		padding: 5px;
 		width: 100%;
+		color: red;
 		float: bottom;
 		}
 	
@@ -26,26 +44,26 @@
 		border: 1px solid black;
 		padding: 15px;
 	}
-	
+
 	#links {
-		float: right;
-		width: 35%;
+		padding-bottom: 8px;
+		border: solid;
 	}
-	
-	#horse {
-		float: left;
-		width: 65%;
-	}
-	
-	#content {
-		float: bottom;
-		width: 100%;
-	}	
+
 	a {
-		color: black;
+		color: whitesmoke;
 	}
 	
 	a:hover{
 		color: red;
+	}
+
+	#table {
+		background-color: aquamarine;
+		width: 350px;
+	}
+
+	.button1{
+		background-color: blueviolet;
 	}
 	

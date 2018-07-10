@@ -14,14 +14,17 @@
 
 	h1 {
 		color: cyan;
+		text-align: center;
 	}
 
 	h2{
 		color: blueviolet;
+		text-align: center;
 	}
 
 	h4{
 		color: greenyellow;
+		text-align: center;
 	}
 
 	clouds {
@@ -37,7 +40,7 @@
 		padding: 5px;
 		width: 100%;
 		color: red;
-		float: bottom;
+		text-align: right;
 		}
 	
 	#table, th, td {
@@ -46,8 +49,9 @@
 	}
 
 	#links {
-		padding-bottom: 8px;
-		border: solid;
+		background-color: black;
+		padding: 5px;
+		text-align: center;
 	}
 
 	a {

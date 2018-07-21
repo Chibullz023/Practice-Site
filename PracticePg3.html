@@ -1,53 +1,74 @@
 <html>
 <head>
 	<title>Practice Pg 03</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript">
+		// <!--
+		
+		function updateClock ( )
+		{
+		  var currentTime = new Date ( );
+		
+		  var currentHours = currentTime.getHours ( );
+		  var currentMinutes = currentTime.getMinutes ( );
+		  var currentSeconds = currentTime.getSeconds ( );
+		
+		  // Pad the minutes and seconds with leading zeros, if required
+		  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
+		  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
+		
+		  // Choose either "AM" or "PM" as appropriate
+		  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+		
+		  // Convert the hours component to 12-hour format if needed
+		  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+		
+		  // Convert an hours component of "0" to "12"
+		  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+		
+		  // Compose the string for display
+		  var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+		
+		  // Update the time display
+		  document.getElementById("clock").firstChild.nodeValue = currentTimeString;
+		}
+		
+		// -->
+		</script>
 </head>
 
-<body>
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
 
 
 <h1>Practice Page 03</h1>
 
-<nav id="links">
-
-	<p>&ensp; <a href="index.html"> Page 01 </a> &ensp; || &ensp; <a href="PracticePg2.html"> Page 02 </a> &ensp;</p>
-		
+<nav id="navbar">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Page 01</a></li>
+            <li><a href="PracticePg2.html">Page 02</a></li>
+            <li>HI World!!!</li>
+        </ul>
+    </div>    
 </nav>
-
-<fieldset>
-	<legend>Radio Button Example</legend>
-	
-	<label for="">Birthday Season</label><br>
-	
-	<input type="radio" id="example1" name="radioEx" value="spring">
-	<label for="example1" id="example1">Spring</label>
-	<br>
-	
-	<input type="radio" id="example2" name="radioEx" value="summer">
-	<label for="example2">Summer</label>
-	<br>
-	
-	<input type="radio" id="example3" name="radioEx" value="fall">
-	<label for="example3">Fall</label>
-	<br>
-	
-	<input type="radio" id="example4" name="radioEx" value="winter">
-	<label for="example4">Winter</label>
-
-</fieldset>
+<br><br>
+<h2 style="text-align: left;">Current Time</h2>
 <br>
-<input type="text"></input>
+<span id="clock">&nbsp;</span>
+
+<br><br><br>
 
 <br><br>
 
 <figure>
 	<img src="images/worldmap.jpg" alt="Map of the World">
+	<br>
 	<figcaption>Map of the World</figcaption>
 </figure>
 
-<br><br><hr>
+<div style="margin-top: 500px;"></div>
 
+<footer id="footer">Copyright &copy; 2018</footer>
 
 </body>
 

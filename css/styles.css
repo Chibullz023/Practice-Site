@@ -2,9 +2,14 @@
 		height: 100%;
 		background-color: peru;
 	}
+
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		line-height: 1.6em;
+	}
 	
 	p {
-		line-height: 10px;
 		color: aliceblue;
 	}
 
@@ -15,7 +20,6 @@
 	}
 
 	h1 {
-		color: cyan;
 		text-align: center;
 	}
 
@@ -25,25 +29,18 @@
 	}
 
 	h4{
-		color: greenyellow;
 		text-align: center;
 	}
 
 	clouds {
 		opacity: 0.1;
 	}
-
-	#nextpage {
-		background-color: white;
-	}
 	
 	#footer {
-		padding-top: 5px;
-		padding: 5px;
-		padding-right: 15px;
-		width: 100%;
-		color: red;
-		text-align: right;
+		text-align: center;
+		background-color: #924915;
+		padding: 20px;
+		margin-top: 40px;
 		}
 	
 	#table, th, td {
@@ -51,10 +48,30 @@
 		padding: 15px;
 	}
 
+	#main-header {
+		background-color: aqua;
+		color: red;
+		padding: 10px;
+	}
+
 	#navbar {
 		background-color: black;
 		padding: 5px;
-		text-align: left;
+	}
+
+	#navbar ul {
+		padding: 5px;
+		list-style: none;
+	}
+
+	#navbar li {
+		display: inline;
+	}
+
+	#navbar a {
+		text-decoration: none;
+		font-size: 18px;
+		padding-right: 15px;
 	}
 
 	a {
@@ -73,11 +90,3 @@
 	.button1{
 		background-color: blueviolet;
 	}
-
-	#clock {
-		color: blue;
-		background-color: white;
-		padding: 20px;
-	}
-
-	

@@ -90,3 +90,9 @@
 	.button1{
 		background-color: blueviolet;
 	}
+
+	#clock {
+		background-color: aquamarine;
+		color: blue;
+		padding: 25px;
+	}

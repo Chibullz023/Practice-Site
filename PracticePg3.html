@@ -1,76 +1,51 @@
 <html>
-<head>
-	<title>Practice Pg 03</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<script type="text/javascript">
-		// <!--
-		
-		function updateClock ( )
-		{
-		  var currentTime = new Date ( );
-		
-		  var currentHours = currentTime.getHours ( );
-		  var currentMinutes = currentTime.getMinutes ( );
-		  var currentSeconds = currentTime.getSeconds ( );
-		
-		  // Pad the minutes and seconds with leading zeros, if required
-		  currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;
-		  currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
-		
-		  // Choose either "AM" or "PM" as appropriate
-		  var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
-		
-		  // Convert the hours component to 12-hour format if needed
-		  currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
-		
-		  // Convert an hours component of "0" to "12"
-		  currentHours = ( currentHours == 0 ) ? 12 : currentHours;
-		
-		  // Compose the string for display
-		  var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
-		
-		  // Update the time display
-		  document.getElementById("clock").firstChild.nodeValue = currentTimeString;
-		}
-		
-		// -->
-		</script>
-</head>
+  <head>
+    <title>Practice Pg 03</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body onload="updateClock(); setInterval('updateClock()', 1000)">
+  <body onload="updateClock(); setInterval('updateClock()', 1000)">
+    <header id="main-header">
+      <h1>MT Practice Site Pg03</h1>
+    </header>
 
+    <nav id="navbar">
+      <a href="index.html">Page 01</a>
+      <a href="PracticePg2.html">Page 02</a>
+      <a href="PracticePg4.html">Page 04</a>
+    </nav>
 
-		<header id="main-header">
-				<h1>MT Practice Site Pg03</h1>
+    <section id="main_content">
+      <br /><br />
+      <h2 style="text-align: left;">Current Time</h2>
+      <br />
+      <span id="clock">
+        &nbsp;
+      </span>
 
-			  </header>
+      <br /><br /><br />
 
-<nav id="navbar">
-        
-            <a href="index.html">Page 01</a>
-            <a href="PracticePg2.html">Page 02</a>
-            <a href="PracticePg4.html">Page 04</a>
-        
-</nav>
-<br><br>
-<h2 style="text-align: left;">Current Time</h2>
-<br>
-<span id="clock">&nbsp;</span>
+      <br /><br />
 
-<br><br><br>
+      <figure>
+        <img
+          src="images/worldmap.jpg"
+          width="650"
+          height="400"
+          alt="Map of the World"
+        />
+        <br />
+        <figcaption>
+          World with Countries - Multicolor by
+          <a href="https://freevectormaps.com/?ref=atr" target="_blank"
+            >FreeVectorMaps.com</a
+          >
+        </figcaption>
+      </figure>
+    </section>
+    <div style="margin-top: 500px;"></div>
 
-<br><br>
-
-<figure>
-	<img src="images/worldmap.jpg" width="650" height="400" alt="Map of the World">
-	<br>
-	<figcaption>World with Countries - Multicolor by <a href="https://freevectormaps.com/?ref=atr" target="_blank">FreeVectorMaps.com</a></figcaption>
-</figure>
-
-<div style="margin-top: 500px;"></div>
-
-<footer id="footer">Copyright &copy; 2018 My Practice Website</footer>
-
-</body>
-
+    <footer id="footer">Copyright &copy; 2018 My Practice Website</footer>
+    <script src="javascript/js.js"></script>
+  </body>
 </html>

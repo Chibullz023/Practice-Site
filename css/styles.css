@@ -13,6 +13,7 @@ body {
 
 p {
   color: aliceblue;
+  font-size: 1.2em;
 }
 
 ul {
@@ -21,18 +22,10 @@ ul {
   line-height: 1.4em;
 }
 
-h1 {
+h1, h2, h3, h4 {
   text-align: center;
 }
 
-h2 {
-  color: blueviolet;
-  text-align: center;
-}
-
-h4 {
-  text-align: center;
-}
 
 clouds {
   opacity: 0.1;
@@ -40,11 +33,15 @@ clouds {
 
 #main_content {
   margin-left: 15px;
+  padding: 15px;
 }
 
 #footer {
   text-align: center;
   background-color: #924915;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
   padding: 20px;
   margin-top: 40px;
 }
@@ -59,23 +56,31 @@ td {
 #main-header {
   background-color: rgb(0, 48, 102);
   color: red;
-  padding: 10px;
+  padding: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 #navbar {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  justify-content: center;
+  font-size: 1.3em;
   background-color: black;
 }
 
 #navbar a {
   color: whitesmoke;
-  padding: 14px 20px;
+  padding: 15px 30px;
   text-decoration: none;
   text-align: center;
 }
 
 #navbar a:hover {
-  background-color: #8c8c8c;
+	color: red;
+  background-color: white;
 }
 
 a:hover {
